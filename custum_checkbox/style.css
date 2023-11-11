@@ -1,0 +1,88 @@
+/* Global styling */
+* {
+    box-sizing: border-box;
+  }
+  body {
+    height: 100vh;
+    background-color: #090909;
+    display: grid;
+    place-items: center;
+  }
+  
+  /* Container styling */
+  .container {
+    max-width: 1200px;
+    margin: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* Form check styling */
+  .form-check {
+    --border: gray;
+    --cursor: rgb(75, 35, 35);
+    --bg_checked: blue;
+    --bg_cursor: white;
+    position: relative;
+    cursor: pointer;
+    font-size: 30px;
+  }
+  
+  /* Input checkbox styling */
+  .form-check input {
+    position: absolute;
+    opacity: 0;
+  }
+  
+  /* Label styling */
+  .form-check label {
+    display: grid;
+    grid-template-columns: 2em 1fr;
+    grid-template-areas: "checkbox label";
+    gap: 20px;
+    color: rgb(53, 53, 51);
+  }
+  
+  /* Pseudo-elements for styling the checkbox */
+  .form-check label::before,
+  .form-check label::after {
+    content: '';
+    display: block;
+    grid-area: checkbox;
+    margin-top: .1em;
+    border-radius: 1em;
+  }
+  
+  /* Styling for the checkbox */
+  .form-check label::before {
+    border: 1px solid var(--border);
+    width: 100%;
+    height: 1em;
+    transition: box-shadow .3s;
+    background-color: aliceblue;
+
+  }
+  
+  /* Styling for the cursor area */
+  .form-check label::after {
+    position: relative;
+    top: 1px;
+    width: 1em;
+    height: 1em;
+    background-color: var(--cursor);
+    transition: background-color .3s, transform 0.3s;
+  }
+  
+/* Styling when the checkbox is checked */
+.form-check input:checked + label::before {
+    background-color: var(--bg_checked);
+    border: var(--bg_checked);
+    box-shadow: 0 0 20px rgba(226, 183, 183, 0.8); /* Add box shadow when checked */
+  }
+  
+  /* Styling when the checkbox is checked for the cursor area */
+  .form-check input:checked + label::after {
+    background-color: var(--bg_cursor);
+    border: var(--border);
+    transform: translate(1em);
+  }

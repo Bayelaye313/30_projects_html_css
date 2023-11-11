@@ -1,117 +1,159 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-/*                    <img src="gato16.jpg" alt="chat et pc">
-*/
-body{
+
+body {
     font-size: 16px;
     color: rgba(0, 0, 0, .37);
     line-height: 1.6;
-    font-family: "Montserrat" sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 
-.navbar{
+.navbar {
     position: fixed;
     background-color: #fff;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    border: 1px;
+    border: 1px solid; /* Add border style (e.g., solid) */
     width: 100%;
-    padding: 20px 80px 20px;
+    padding: 20px;
 }
-.navbar .links a{
+
+.navbar .links {
+    flex-grow: 1; /* Allow links to take up remaining space */
+}
+
+.navbar .links a {
     text-decoration: none;
     color: gray;
     font-weight: 500;
-    padding: 0 53px;
-
+    padding: 0 20px;
+    display: block;
 }
-.navbar .links a:hover{
+
+.navbar .links a:hover {
     color: black;
 }
-.navbar .icons a{
+
+.navbar .icons {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .icons a {
     font-size: 20px;
-    margin: auto 10px;
+    margin: 0 10px;
     color: black;
     opacity: 0.5;
 }
-.navbar .icons a:hover{
+
+.navbar .icons a:hover {
     opacity: 1;
 }
 
-.header-img{
+.header-img {
     height: 400px;
     background: no-repeat center top / cover url("stihli-a-fit-spanek-01.jpg");
 }
-main{
-    display: flex;
-    flex-direction: row;
 
-}
-main .service{
+main {
     display: flex;
     flex-direction: column;
-    color: black;
-    width: calc(100% -380px);
+    align-items: center;
 }
-.text_item p:first-child{
+
+main .service {
+    width: 100%;
+}
+
+.text_item p:first-child {
     color: rgba(0, 0, 0, .6);
-    font-weight: 300px;
+    font-weight: 300;
     margin-bottom: 5px;
 }
-.img_item{
+
+.img_item {
     border: 1px solid black;
-    width: 120px;
+    width: 100%;
+    height: 120px;
 }
-.text_item{
-    width: 50%;
+
+.text_item {
+    width: 100%;
 }
-main .service .item{
-    display: flex;
-    flex-direction: row;
-    justify-content:center ;
-    gap: 20px;
+
+main .service .item {
     margin-top: 30px;
 }
-.item .img_item {
-    border: 1px solid black;
-    background: no-repeat center top / cover url("gato16.jpg");
-    font-size: 16px;
-    width: calc(100% -180px);
 
+.item .img_item {
+    font-size: 16px;
 }
 
-main .sidebar{
+main .sidebar {
     border: 1px solid #ccc;
-    width: 380px;
-    padding: 0 30px;
+    width: 100%;
+    max-width: 380px;
+    padding: 0 20px;
     text-align: left;
 }
-.side_title{
+
+.side_title {
     font-size: 25px;
     color: black;
     margin: 15px 0;
 }
-.contain ul{
+
+.contain {
+    margin-bottom: 20px;
+}
+
+.contain ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
     font-size: 15px;
 }
-.contain ul a{
+
+.contain ul a {
     text-decoration: none;
     color: gray;
 }
-.contain ul li{
+
+.contain ul li {
     padding: 5px 0;
 }
-.contain a:hover{
+
+.contain a:hover {
     text-decoration: underline;
     color: black;
 }
-hr{
+
+hr {
     margin: 10px 0;
+}
+
+/* Media Queries for Responsive Design */
+@media screen and (min-width: 768px) {
+    .navbar {
+        padding: 20px 80px;
+    }
+
+    .navbar .links a {
+        padding: 0 40px;
+    }
+
+    main {
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    main .service {
+        max-width: calc(100% - 380px);
+        margin-right: 20px;
+    }
 }
