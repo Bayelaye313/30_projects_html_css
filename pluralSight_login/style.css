@@ -1,179 +1,191 @@
+/* style.css */
+
 @import url('https://fonts.googleapis.com/css?family=Roboto:300');
+
 * {
-    box-sizing: border-box;
-  }
+  box-sizing: border-box;
+}
 
-  body{
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-    background: #181818;
-    color: #fff;
-    overflow: hidden;
-  }
-  #wrapper{
-    display: flex;
-    flex-direction: row;
-  }
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  background: #181818;
+  color: #fff;
+  overflow: hidden;
+}
 
+#wrapper {
+  display: flex;
+  flex-direction: row;
+}
 
-  #left{
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;  }
-  #left #assign{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 80%;
-    padding-bottom: 1rem;  
-  }
-  #left img{
-    width: 40%;
-    padding-bottom: 30px;
-    text-align: center;
-  }
-  #assign form{
-    width: 80%;
-    padding-bottom: 3rem;
- }
- #assign label {
-    font-size: 0.9rem;
-    line-height: 2rem;
-    font-weight: 500;
-  }
+#left {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+#left #assign {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  padding-bottom: 1rem;
+}
+
+#left img {
+  width: 40%;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+#assign form {
+  width: 80%;
+  padding-bottom: 3rem;
+}
+
+#assign label {
+  font-size: 0.9rem;
+  line-height: 2rem;
+  font-weight: 500;
+}
+
 #assign .text-input {
-    margin-bottom: 1.3rem;
-    width: 100%;
-    border-radius: 2px;
-    background-color: #181818;
-    border: 1px solid #555;
-    color: #ccc;
-    padding: 0.5rem 1rem;
-    line-height: 1.3rem;
-  }
-  #assign .primary-btn {
-    width: 100%;
-    padding: 0.5rem 1rem;
-    color: white;
-    background-color: #c54607;
-    line-height: 1.3rem;
-    font-weight: bold;
-  }
-  #assign .primary-btn:hover {
-    background-color: #ff7b39;
-  }
-  
-  #left .secondary-btn,
-  .or,
-  .links {
-    width: 60%;
-  }
-  
-  #left .links a {
-    display: block;
-    color: #fff;
-    text-decoration: none;
-    margin-bottom: 1rem;
-    text-align: center;
-    font-size: 0.9rem;
-  }
-  
-  #left .or {
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 1.2rem;
-    align-items: center;
-  }
-  
-  #left .or .bar {
-    flex: auto;
-    border: none;
-    height: 1px;
-    background: #aaa;
-  }
-  
-  #left .or span {
-    color: #ccc;
-    padding: 0 0.8rem;
-  }
-.secondary-btn{
-    background-color: #181818;
-    padding: 0.5rem 1rem;
-    line-height: 1.3rem;
-    font-weight: bold;
-    text-decoration: none;
-    color: white;
-    border: 1px solid white;
-    text-align: center;
+  margin-bottom: 1.3rem;
+  width: 100%;
+  border-radius: 2px;
+  background-color: #181818;
+  border: 1px solid #555;
+  color: #ccc;
+  padding: 0.5rem 1rem;
+  line-height: 1.3rem;
 }
-.secondary-btn:hover{
-    color: #c54607;
-    border: 1px solid orangered;
 
+#assign .primary-btn {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  color: white;
+  background-color: #c54607;
+  line-height: 1.3rem;
+  font-weight: bold;
 }
-#left footer{
-    padding-top: 50px;
-    text-align: center;
-    font-size: 0.9rem;
-}
-footer a{
-    color: #c54607;
-}
-#right{
-    flex:1;
-  }
-  #right .showcase{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    text-align: center;
-    background-image: url("../pluralSight_login/BackgroundsDev.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
 
-  }
+#assign .primary-btn:hover {
+  background-color: #ff7b39;
+}
 
-  /* Media Queries */
+#left .secondary-btn,
+.or,
+.links {
+  width: 60%;
+}
+
+#left .links a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+#left .or {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1.2rem;
+  align-items: center;
+}
+
+#left .or .bar {
+  flex: auto;
+  border: none;
+  height: 1px;
+  background: #aaa;
+}
+
+#left .or span {
+  color: #ccc;
+  padding: 0 0.8rem;
+}
+
+.secondary-btn {
+  background-color: #181818;
+  padding: 0.5rem 1rem;
+  line-height: 1.3rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  border: 1px solid white;
+  text-align: center;
+}
+
+.secondary-btn:hover {
+  color: #c54607;
+  border: 1px solid orangered;
+}
+
+#left footer {
+  padding-top: 50px;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: #c54607;
+}
+
+#right {
+  flex: 1;
+}
+
+#right .showcase {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  background: no-repeat center/cover url("../pluralSight_login/BackgroundsDev.jpg");
+}
+
+/* Media Queries */
 @media (min-width: 1200px) {
-    #left {
-      flex: 4;
-    }
-  
-    #right {
-      flex: 6;
-    }
+  #left {
+    flex: 4;
   }
-  
-  @media (max-width: 768px) {
-    body {
-      overflow: auto;
-    }
-  
-    #right {
-      display: none;
-    }
-  
-    #left {
-      justify-content: start;
-      margin-top: 4vh;
-    }
-  
-    #assign, img {
-      margin-bottom: 2vh;
-    }
-  
-    #assign .text-input {
-      margin-bottom: 0.7rem;
-    }
-  
-    footer {
-      padding-top: 1rem;
-    }
+
+  #right {
+    flex: 6;
   }
-  
+}
+
+@media (max-width: 768px) {
+  body {
+    overflow: auto;
+  }
+
+  #right {
+    display: none;
+  }
+
+  #left {
+    justify-content: start;
+    margin-top: 4vh;
+  }
+
+  #assign,
+  img {
+    margin-bottom: 2vh;
+  }
+
+  #assign .text-input {
+    margin-bottom: 0.7rem;
+  }
+
+  footer {
+    padding-top: 1rem;
+  }
+}
