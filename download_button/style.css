@@ -1,0 +1,80 @@
+/* Global styling */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto";
+  background-color: #090909;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn_play {
+  border: 0;
+  cursor: pointer;
+  position: relative;
+}
+
+.btn_play div {
+  padding: 1.2rem 5.5rem;
+  overflow: hidden;
+  position: relative;
+  border: 1px solid white;
+  background-color: rgb(189, 38, 38);
+}
+
+.btn_play a {
+    position: inherit;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 1.5em;
+  color: white;
+  font-weight: bold;
+  z-index: 3; /* Increased z-index */
+}
+
+/*--------------span*/
+.btn_play span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 120%;
+  height: 110%;
+  background-color: rgb(15, 25, 35);
+  transform: translateX(-105%) skew(-10deg);
+  transition: 0.4s ease;
+}
+
+.btn_play:hover span {
+  transform: translateX(-5%) skew(-10deg);
+}
+
+/*Le cadre*/
+.btn_play::before,
+.btn_play::after {
+  content: "";
+  position: absolute;
+  width: 105%;
+  height: 50%;
+  background-color: transparent;
+  border: 1px solid rgb(134, 129, 124);
+  left: -2.5%;
+  z-index: -1;
+}
+
+.btn_play::before {
+  border-bottom-width: 0px;
+  top: -10px;
+}
+
+.btn_play::after {
+  bottom: -10px;
+  border-top: 0;
+}
