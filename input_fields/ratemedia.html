@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rate the media</title>
+    <style>
+        body {
+            background-color: #E0E0E2;
+            width: 100vh;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: translate(75%, 50%);
+        }
+        
+        ul {
+            list-style-type: none;
+            text-align: center;
+            padding: 0px;
+        }
+        
+        li {
+            display: inline;
+        }
+        
+        main {
+            text-align: center;
+        }
+        
+        footer {
+            text-align: center;
+        }
+        
+        h1 {
+            color: #721817;
+        }
+        
+        h2 {
+            color: #721817;
+        }
+        
+        .center-text {
+            text-align: center;
+        }
+        
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        h2 > span {
+            color: #FA9F42;
+            font-size: 0.75em;
+        }
+        
+        form > div {
+            margin-top: 0.5em;
+            margin-bottom: 0.5em;
+        }
+        
+        #copyright {
+            padding-top: 12px;
+            font-size: 0.75em;
+        }
+        
+        input:invalid {
+            color: red;
+        }
+    </style>
+</head>
+    <body>
+        <video src="video.mp4" width="320" height="240" type="video/mp4" controls></video>
+        <form action="">
+        <div>
+            <label for="rating">Rating</label>
+            <input type="range" name="rating" id="rating" min="1" max="5" list="ratings">
+            <datalist id="ratings">
+            <option value="1" label="1"></option>
+            <option value="2"></option>
+            <option value="3"></option>
+            <option value="4"></option>
+            <option value="5" label="5"></option>
+            </datalist>
+        </div>
+        <button type="submit">Submit Rating</button>
+        </form>
+        <iframe src="https://fr.w3docs.com/apprendre-css/the-ultimate-guide-to-flexbox.html" frameborder="0" sandbox="allow-modals" allowfullscreen></iframe>
+  </body>
+</html>
