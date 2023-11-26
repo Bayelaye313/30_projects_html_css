@@ -5,7 +5,7 @@
   }
   
   .container {
-    min-height: 100vh;
+    min-height: 200vh;
     background-color: bisque;
   }
   
@@ -28,13 +28,13 @@
     border-style: solid;
   }
   
-  .letters:hover p:nth-child(even) {
-    transform: rotateY(360deg);
+  .letters:hover p:nth-child(2n) {
+    transform: rotateY(720deg);
     transition: 0.5s;
   }
   
-  .letters:hover p:nth-child(odd) {
-    transform: rotateX(360deg);
+  .letters:hover p:nth-child(2n+1) {
+    transform: rotateX(720deg);
     transition: 1.5s;
   }
   

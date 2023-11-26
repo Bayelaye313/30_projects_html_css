@@ -1,0 +1,67 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #021029;
+    margin: 0;
+  }
+ /*.hand::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    z-index: 100;
+    background: black;
+    border: 4px solid red;
+  }
+
+  }*/
+  
+  .container {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    border-radius: 50%;
+    background-color: #072d38;
+    position: relative;
+  }
+  
+  .hand {
+    position: absolute;
+    height: 130px;
+    width: 4px;
+    bottom: 150px;
+    transform-origin: bottom;
+    background: red;
+
+
+  }
+  
+  .seconds {
+    height: 105px;
+    width: 2px;
+    background-color: rgb(5, 116, 131);
+    animation: rotateHand 60s infinite linear;
+  }
+  
+  .minutes {
+    height: 120px;
+    width: 5px;
+    background: black;
+    animation: rotateHand 3600s infinite linear;
+  }
+  
+  @keyframes rotateHand {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
