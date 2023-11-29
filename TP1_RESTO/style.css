@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Montserrat:ital@1&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    margin: 24px 64px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 24px;
+}
+
+.links a {
+    text-decoration: none;
+    color: black;
+    text-align: start;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 1.6em;
+}
+
+.links a:hover {
+    background-color: #495e57;
+    color: white;
+    opacity: 0.6;
+}
+
+/* Main */
+.reservation {
+    position: relative;
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20%;
+    background-color: #495e57;
+}
+
+.section-text {
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    gap: 16px;
+    width: 35%;
+    color: white;
+    margin-top: 2.6em;
+}
+
+.reservation img {
+    margin-top: 2em;
+    border-radius: 1.6em;
+    z-index: 3;
+    width: 336px;
+}
+
+.section-text .title {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #f4ce14;
+    font-size: 60px;
+    font-weight: 700;
+}
+
+h2 {
+    margin: 0.83em 0;
+    font-weight: bold;
+}
+
+.section-text p {
+    color: #fff;
+    font-family: Karla, sans-serif;
+    font-size: 22px;
+    margin-bottom: 1em;
+}
+
+#btn-reserve {
+    background-color: #f4ce14;
+    border: none;
+    border-radius: 2em;
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.2);
+    color: #000;
+    font-family: Karla, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    height: 3em;
+    width: 12em;
+    cursor: pointer;
+}
+
+.menu {
+    height: 120vh;
+    width: 100%;
+}
+
+.top-menu {
+    margin-top: 8em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.top-menu h1 {
+    font-weight: 900;
+    font-size: 28px;
+}
+
+.menu-cards {
+    margin-top: 8em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+
+.cards {
+    display: block;
+    width: 18rem;
+    line-height: 1.8em;
+    font-family: Karla, sans-serif;
+    box-shadow: 5px 10px 20px #ccc;
+    height: 36rem;
+    background-color: #ebe5e5;
+}
+
+.card-top {
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+    margin-bottom: -0.2em;
+    width: 100%;
+}
+
+.card-title {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.btn.btn-primary {
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 1.2rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+.testimonials {
+    height: 70vh;
+    width: 100%;
+    background-color: #495e57;
+    text-align: center;
+}
+
+.testimonials h2 {
+    padding-top: 2rem;
+    color: rgb(245, 207, 20);
+    font-weight: 900;
+    font-size: 32px;
+}
+
+#temoins {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+}
+
+.profil {
+    padding: 1em 0;
+    background-color: #fff;
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.2);
+    height: 250px;
+    margin: 2em;
+    width: 250px;
+}
+
+.profil p {
+    padding-top: 10px;
+    line-height: 1.3em;
+    font-family: Karla, sans-serif;
+    font-size: 18px;
+}
+
+.temoin-profil {
+    border-radius: 50%;
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.2);
+    margin: 1em;
+    width: 30%;
+}
+
+.blog {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    border-bottom: 4px solid black;
+}
+
+.blog-text {
+    padding-top: 5rem;
+    width: 40%;
+}
+
+.blog-text p {
+    padding-top: 10px;
+    line-height: 1.6em;
+    font-family: Karla, sans-serif;
+    font-size: 18px;
+}
+
+.blog-img {
+    position: relative;
+    width: 30%;
+    top: 3rem;
+}
+
+.blog-img img:nth-child(1) {
+    width: 320px;
+    height: 310px;
+    position: absolute;
+}
+
+.blog-img img:nth-child(2) {
+    width: 280px;
+    position: absolute;
+    top: 12rem;
+    right: 17rem;
+    height: 360px;
+}
+
+footer {
+    height: 50vh;
+    width: 100%;
+    border-top: 4px solid #495e57;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+
+.sous-menu {
+    list-style: none;
+    margin-top: 3rem;
+}
+
+.link-footer {
+    display: flex;
+    flex-direction: row;
+    gap: 8rem;
+}
+
+.link-footer > li {
+    list-style: none;
+    font-size: 24px;
+    font-weight: 800;
+    padding: 2em;
+}
+
+.link-footer li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+    font-weight: 700;
+}
