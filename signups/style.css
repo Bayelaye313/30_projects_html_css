@@ -12,11 +12,13 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: "Ubuntu";
+    animation: rotate 6s infinite alternate linear;
 }
 .semi-circle{
-    position: absolute;
-    width: 30%;
-    height: 50%;
+    position: fixed;
+    width: 100vmin;
+    height: 100vmin;
     border-radius: 50%;
     overflow: hidden;
 }
@@ -29,28 +31,32 @@ body{
 .bottom{
     bottom: 0;
     right: 0;
-    background-color: rgb(47, 0, 255);
+    background-color:#143d81 ;
     transform: translate(50%, 50%);
 
 }
 
 .card{
-    width: 25%;
-    height: 80%;
-    border-radius: 2em;
+    position: relative;
+    z-index: 3;
+    width: 50%;
+    height: 90%;
+    border-radius: 1.25rem;
     background-color: white;
     display: flex;
     flex-direction: column;
-    justify-content:space-between;
     text-align: center;
-    gap: 20px;
+    gap: 30px;
+    overflow: hidden;
+    box-shadow: 0 50px 100px rgb( 0 0 0 / 10%);
+    
 }
 .card-top{
     display: flex;
     justify-content: center;
     align-items: center;
     height: 20%;
-    background-color: rgb(5, 5, 90);
+    background-color: #216ce7;
     border-radius: 0 0 50% 50%;
     
 }
@@ -58,15 +64,47 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 30px;
-    width: 30px;
+    height: 64px;
+    width: 64px;
     background-color: white;
     border-radius: 50%;
-
 }
+.logo i {
+    font-size: 50px;
+    color: #216ce7;
+    font-weight: 500;
+}
+.card> h2{
+    font-size: 22px;
+    font-weight: 400;
+    color: #2a3444;
+}
+
 .card-main form{
-    background-color: blanchedalmond;
+    height: 16rem;
     display: flex;
     flex-direction: column;
-
+    justify-content: space-around;
+    
+}
+input, button{
+    padding: 1em;
+    border-radius: 16px;
+    margin: 8px;
+    border:2px solid rgb(89, 91, 94, 0.5);
+}
+input:hover
+{
+    border:2px solid rgb(89, 91, 94, 1);
+}
+button{
+    background-color: #216ce7;
+    color: white;
+    border: none;
+    font-weight: 700;
+}
+.card-bottom a{
+    color: #216ce7;
+    font-weight: 700;
+    font-family: "Ubuntu"
 }
