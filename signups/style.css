@@ -1,110 +1,145 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Montserrat:ital@1&family=Ubuntu:wght@300;400;500;700&display=swap');
-
-*{
+:root {
+    --primary-bg-color: aliceblue;
+    --logo-color:#216ce7;
+    --white-color: white;
+    --circle-btm-color: #143d81;
+    --circle-top-color: rgb(0, 238, 255);
+    --semi-circle-size: 100vmin;
+    --box-shadow-color: rgb(0, 0, 0, 0.1);
+    --card-width: 30%;
+    --card-height: 80%;
+    --box-shadow: 0 50px 100px var(--box-shadow-color);
+    --border-radius: 1.25rem;
+    --input-border-hover: rgb(89, 91, 94, 1);
+  }
+  
+  * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-body{
-    height: 100dvh;
+  }
+  
+  body {
+    height: 100vh;
     width: 100%;
-    background-color:aliceblue;
+    background-color: var(--primary-bg-color);
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: "Ubuntu";
     animation: rotate 6s infinite alternate linear;
-}
-.semi-circle{
+  }
+  
+  .semi-circle {
     position: fixed;
-    width: 100vmin;
-    height: 100vmin;
+    width: var(--semi-circle-size);
+    height: var(--semi-circle-size);
     border-radius: 50%;
     overflow: hidden;
-}
-.top{
+  }
+  
+  .top {
     top: 0;
     left: 0;
-    background-color: rgb(0, 238, 255);
+    background-color: var(--circle-top-color);
     transform: translate(-50%, -50%);
-}
-.bottom{
+  }
+  
+  .bottom {
     bottom: 0;
     right: 0;
-    background-color:#143d81 ;
+    background-color: var(--circle-btm-color);
     transform: translate(50%, 50%);
-
-}
-
-.card{
+  }
+  
+  .card {
     position: relative;
     z-index: 3;
-    width: 50%;
-    height: 90%;
-    border-radius: 1.25rem;
-    background-color: white;
+    width: var(--card-width);
+    height: var(--card-height);
+    border-radius: var(--border-radius);
+    background-color: var(--white-color);
     display: flex;
     flex-direction: column;
     text-align: center;
     gap: 30px;
     overflow: hidden;
-    box-shadow: 0 50px 100px rgb( 0 0 0 / 10%);
-    
-}
-.card-top{
+    box-shadow: var(--box-shadow);
+  }
+  
+  .card-top {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 20%;
-    background-color: #216ce7;
+    background-color: var(--logo-color);
     border-radius: 0 0 50% 50%;
-    
-}
-.logo{
+  }
+  
+  .logo {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 64px;
     width: 64px;
-    background-color: white;
+    background-color: var(--white-color);
     border-radius: 50%;
-}
-.logo i {
+  }
+  
+  .logo i {
     font-size: 50px;
-    color: #216ce7;
+    color: var(--logo-color);
     font-weight: 500;
-}
-.card> h2{
+  }
+  
+  .card> h2 {
     font-size: 22px;
     font-weight: 400;
     color: #2a3444;
-}
-
-.card-main form{
+  }
+  
+  .card-main form {
     height: 16rem;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    
-}
-input, button{
+  }
+  
+  input, button {
     padding: 1em;
     border-radius: 16px;
     margin: 8px;
-    border:2px solid rgb(89, 91, 94, 0.5);
-}
-input:hover
-{
-    border:2px solid rgb(89, 91, 94, 1);
-}
-button{
-    background-color: #216ce7;
-    color: white;
+    border: 2px solid rgb(89, 91, 94, 0.5);
+    transition: all 0.375;
+  }
+  
+  input:hover {
+    border: 2px solid var(--input-border-hover);
+  }
+  
+  button {
+    background-color: var(--logo-color);
+    color: var(--white-color);
     border: none;
     font-weight: 700;
-}
-.card-bottom a{
-    color: #216ce7;
+    cursor: pointer;
+    letter-spacing: 2px;
+  }
+  
+  .card-bottom a {
+    color: var(--logo-color);
     font-weight: 700;
-    font-family: "Ubuntu"
-}
+    padding: 5px;
+    font-family: "Ubuntu";
+  }
+  
+  @media (min-width: 500px) {
+    body {
+      padding: 0;
+    }
+    .card {
+      margin: 0;
+      width: 360px;
+    }
+  }
+  
