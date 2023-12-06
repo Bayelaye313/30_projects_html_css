@@ -1,9 +1,9 @@
 :root {
-    --primary-bg-color: aliceblue;
-    --logo-color:#216ce7;
-    --white-color: white;
-    --circle-btm-color: #143d81;
-    --circle-top-color: rgb(0, 238, 255);
+    --primary-bg-color: #fafafa;
+    --logo-color:#d12600;
+    --white-color: #e6e6e5;
+    --circle-btm-color: #ff6d4d;
+    --circle-top-color:  #180202;
     --semi-circle-size: 100vmin;
     --box-shadow-color: rgb(0, 0, 0, 0.1);
     --card-width: 30%;
@@ -95,7 +95,7 @@
   .card> h2 {
     font-size: 22px;
     font-weight: 400;
-    color: #2a3444;
+    color: var(--circle-top-color);
   }
   
   .card-main form {
@@ -127,7 +127,7 @@
   }
   
   .card-bottom a {
-    color: var(--logo-color);
+    color: #180202;
     font-weight: 700;
     padding: 5px;
     font-family: "Ubuntu";
