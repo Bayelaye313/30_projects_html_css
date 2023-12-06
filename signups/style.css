@@ -125,6 +125,10 @@
     cursor: pointer;
     letter-spacing: 2px;
   }
+  form>input::placeholder{
+    color: var(--circle-top-color);
+
+  }
   
   .card-bottom a {
     color: #180202;
