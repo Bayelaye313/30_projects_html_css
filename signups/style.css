@@ -127,7 +127,6 @@
   }
   form>input::placeholder{
     color: var(--circle-top-color);
-
   }
   
   .card-bottom a {
