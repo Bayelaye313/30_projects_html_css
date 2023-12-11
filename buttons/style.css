@@ -27,6 +27,6 @@ a{
     height: 6px;
     margin-top: 1px;
     margin-bottom: -6px;
-    background-image:linear-gradient(90deg, orange, pink 50%, blue);
+    background-image:linear-gradient(-90deg, orange, pink 50%, blue);
     opacity: 1;
 }
